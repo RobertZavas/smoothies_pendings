@@ -28,3 +28,8 @@ if my_dataframe:
             st.success('Something went wrong', icon = '😡')
 else:
     st.success('there are no pending orders right now', icon = '🤝🏻')
+
+#New Section to display smoothiefruit nutritionin formation
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
